@@ -1,0 +1,36 @@
+<section>
+    <fieldset>
+        <legend>Nuevo Cliente</legend>
+        <form id="formulario" (ngSubmit)="agregarCliente()" [formGroup]="formulario">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" formControlName="nombre">
+            </div>
+            <div class="err">
+                <span *ngIf="formulario.controls['nombre'].getError('required') && formulario.get('nombre')?.touched">
+                    Campo Requerido
+                </span>
+            </div>
+            <div class="err">
+                <span *ngIf="formulario.controls['nombre'].getError('minlength') && formulario.get('nombre')?.touched">
+                    Minimo 3 Caracteres
+                </span>
+            </div>
+            <div class="campo">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" formControlName="edad">
+            </div>
+            <div class="err">
+                <span *ngIf="formulario.controls['edad'].getError('required') && formulario.get('edad')?.touched">
+                    Campo Requerido
+                </span>
+            </div>
+            <div class="campo">
+                <input type="hidden" id="id" formControlName="id">
+            </div>
+            <div class="btn">
+                <input type="submit" value="Agregar Cliente" id="agregar">
+            </div>
+        </form>
+    </fieldset>
+</section>

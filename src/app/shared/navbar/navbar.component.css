@@ -1,0 +1,17 @@
+nav {
+    background-color: var(--c-lBlue);
+    overflow: hidden;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--c-dBlue);
+    text-align: center;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+  }
+  a:hover {
+    background-color: var(--c-dBlue);
+    color: var(--c-white);
+    cursor: pointer;
+  }

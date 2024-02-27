@@ -1,0 +1,21 @@
+<section>
+    <h2>Listado Clientes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listaClientes">
+                <td> {{item.nombre}} </td>
+                <td> {{item.edad}} </td>
+                <td> {{item.id}} </td>
+                <td><a class="btnEdit">Modificar</a></td>
+                <td><a class="btnDelete" (click)="eliminarCliente(item.id)" *ngIf="item.id">Eliminar</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>

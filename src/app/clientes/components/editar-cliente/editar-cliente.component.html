@@ -1,0 +1,18 @@
+<h3>NUEVO CLIENTE EMITER</h3>
+<section>
+    <div>
+        <form [formGroup]="listaEmit" (ngSubmit)="addCliente()">
+            <label for="">Nombre</label>
+            <input type="text" id="nombre" formControlName="nombre">
+            <label for="">Edad</label>
+            <input type="number" id="edad" formControlName="edad">
+            <input type="submit" value="EMIT">
+        </form>
+    </div>
+    <hr>    
+    <div>
+        <ul *ngFor="let item of lista">
+            <li>{{item.nombre}} ==> {{item.edad}}</li>
+        </ul>
+    </div>
+</section>

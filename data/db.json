@@ -1,0 +1,39 @@
+{
+  "clientes": [
+    {
+      "nombre": "roberto",
+      "edad": 19,
+      "id": 1
+    },
+    {
+      "nombre": "roberto 2",
+      "edad": 22,
+      "id": 2
+    },
+    {
+      "nombre": "roberto 3",
+      "edad": 23,
+      "id": 3
+    },
+    {
+      "nombre": "roberto 4",
+      "edad": 24,
+      "id": 4
+    },
+    {
+      "nombre": "Pippa",
+      "edad": 3,
+      "id": 5
+    },
+    {
+      "nombre": "Tenma",
+      "edad": 11,
+      "id": 6
+    },
+    {
+      "nombre": "Lia Chan",
+      "edad": 16,
+      "id": 7
+    }
+  ]
+}
